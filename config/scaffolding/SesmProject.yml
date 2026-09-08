@@ -8,6 +8,16 @@ packages:
   gitUsername: Sephali-Smrutisikha-IBM-1
   gitBranch: main
 - name: WmKafkaAdapter
+  version: 9.6.0.0.26
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
   wpmVersion: latest
+services:
+- serviceName: project.sesm.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections:Kafka_Produce
+  packages:
+  - name: SesmProject
+    version: "1.0"
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
